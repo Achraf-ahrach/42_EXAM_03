@@ -14,7 +14,7 @@ void	putnbr(int *cont, int i)
 	}
 	else if (i < 0)
 	{
-		cont += write(1, "-", 1);
+		*cont += write(1, "-", 1);
 		i *= -1;
 	}
 	if (i <= 9)
